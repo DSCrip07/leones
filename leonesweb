@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Características del León</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #d18b00;
+        }
+        img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #d18b00;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background-color: #b37500;
+        }
+        #info {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        function mostrarInfo() {
+            var info = document.getElementById("info");
+            if (info.style.display === "none") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>El León: Rey de la Selva</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Lion_waiting_in_Namibia.jpg" alt="León majestuoso">
+        <p>El león (<i>Panthera leo</i>) es un mamífero carnívoro de la familia de los félidos. Es conocido como el "rey de la selva" debido a su imponente presencia y poderosa estructura.</p>
+        <button class="btn" onclick="mostrarInfo()">Mostrar más información</button>
+        <div id="info">
+            <h2>Características Principales</h2>
+            <ul>
+                <li>Peso: entre 150 y 250 kg (machos), 100 a 180 kg (hembras).</li>
+                <li>Longitud: hasta 2.5 metros sin contar la cola.</li>
+                <li>Esperanza de vida: 10-14 años en estado salvaje.</li>
+                <li>Hábitat: sabanas y praderas de África.</li>
+                <li>Alimentación: carnívoro, caza en manada.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
